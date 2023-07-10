@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Project</title>
+  <title>PLN Icon+</title>
 
   <!-- Google Font: Source Sans Pro -->
  @include('Template.head')
@@ -25,7 +25,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Tambah Project</h1>
+            <h1 class="m-0">Tambah Data</h1>
           </div>
           <div class="col-sm-6">
           </div>
@@ -36,9 +36,9 @@
     <div class="content">
       <div class="container-fluid">
         <div class="container mt-2">
-             <div class="card card-primary">
+            <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">Data Project</h3>
+                <h3 class="card-title">Data Pelanggan</h3>
               </div>
               <!-- /.card-header -->
               <!-- form start -->
@@ -46,40 +46,32 @@
                 @csrf
                 <div class="card-body">
                   <div class="form-group">
-                    <label for="exampleInputFile">Nama Project</label>
-                    <input name="nama" class="form-control" type="text" placeholder="Masukkan Nama Project">
+                    <label for="exampleInputFile">Nama Pelanggan</label>
+                    <input name="nama" class="form-control" type="text" placeholder="Masukkan Nama Pelanggan">
               @error('nama')
                 <small class="text-danger">{{$message}}</small>
               @enderror
-                    <input name="user_id" class="form-control" type="hidden"  value="{{Auth::user()->id}}" placeholder="Masukkan Nama Project">
+                    <input name="user_id" class="form-control" type="hidden"  value="{{Auth::user()->id}}" placeholder="Masukkan Nama Pelanggan">
                   </div>
                   <div class="form-group">
-                      <label>Deskripsi Project</label>
-                      <textarea name="deskripsi" class="form-control" rows="3" placeholder="Deskripsi Singkat Project Anda"></textarea>
+                      <label>Kendala</label>
+                      <textarea name="deskripsi" class="form-control" rows="3" placeholder="Masukkan kendala yang dimiliki pelanggan"></textarea>
               @error('deskripsi')
                 <small class="text-danger">{{$message}}</small>
               @enderror
                   </div>
                   <div class="form-group">
-                      <label for="exampleInputFile">Gambar Project</label>
-                      <div class="input-group">
-                        <div div class="custom-file">
-                          <input name="gambar" type="file" class="custom-file-input" id="exampleInputFile">
-              @error('gambar')
+                    <label for="exampleInputFile">Invoice</label>
+                    <input name="nama" class="form-control" type="text" placeholder="Masukkan invoice pelanggan">
+              @error('nama')
                 <small class="text-danger">{{$message}}</small>
               @enderror
-                          <label class="custom-file-label" for="exampleInputFile"> Masukkan Gambar Project</label>
-                      </div>
-                    </div>
+                    <input name="user_id" class="form-control" type="hidden"  value="{{Auth::user()->id}}" placeholder="Masukkan invoice pelanggan">
                   </div>
-
-                  
-
-            <h5><b>Kelompok</b></h5>
             <div class="col-12 ">
               <div class="form-group">
-                <label>Anggota </label>
-                <select name="kelompok[]" class="selectpicker form-control"  multiple data-live-search="true" title="Masukkan Nama Mahasiswa">
+                <label>Pic </label>
+                <select name="kelompok[]" class="selectpicker form-control"  multiple data-live-search="true" title="Pilih nama PIC">
                   @foreach ($mahasiswa as $k)
                   
                     <option value="{{$k->id}}">{{$k->nama}}</option>

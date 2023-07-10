@@ -6,7 +6,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 -->
 <html lang="en">
 <head>
-  <title>The Project</title>
+  <title>PLN Icon+</title>
   @include('Template.head')
 </head>
 <body class="hold-transition sidebar-mini">
@@ -25,7 +25,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Daftar Mahasiswa D3 Teknologi Komputer</h1>
+            <h1 class="m-0">Daftar Pic Colection</h1>
           </div><!-- /.col -->
 <!-- /.col -->
         </div><!-- /.row -->
@@ -44,16 +44,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
       </div><br>
     @endif<br>
     <div class="container">
-    <a href="/mahasiswa/create" class="btn btn-primary btn-sm ml-auto">+ Tambah mahasiswa</a>
+    <a href="/mahasiswa/create" class="btn btn-primary btn-sm ml-auto">+ Tambah Pic</a>
     </div>
       <div class="container-fluid">
         <div class="container mt-2">
             <table class="table">
                 <tr>
                     <th>No</th>
-                    <th>NIM</th>
                     <th>Nama</th>
-                    <th>Angkatan</th>
+                    <th>Nomor XX</th>
+                    <th>Jabatan</th>
                     <th>Aksi</th>
                 </tr>
 

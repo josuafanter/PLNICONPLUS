@@ -6,7 +6,7 @@ scratch. This page gets rid of all nims and provides the needed markup only.
 -->
 <html lang="en">
 <head>
-  <title>The Project</title>
+  <title>PLN Icon+</title>
   @include('Template.head')
 </head>
 <body class="hold-transition sidebar-mini">
@@ -25,7 +25,7 @@ scratch. This page gets rid of all nims and provides the needed markup only.
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Ubah Data Mahasiswa</h1>
+            <h1 class="m-0">Ubah Data Pic</h1>
           </div><!-- /.col -->
 <!-- /.col -->
         </div><!-- /.row -->
@@ -46,18 +46,15 @@ scratch. This page gets rid of all nims and provides the needed markup only.
               @error('nama')
                 <small class="text-danger">{{$message}}</small>
               @enderror
-              <label for="">nim </label>
+              <label for="">Nomor XX </label>
               <input class="form-control" type="text" name="nim" value="{{$mhs->nim}}">
               @error('nim')
               <small class="text-danger">{{$message}}</small>
               @enderror
-              <label for="">angkatan</label>
+              <label for="">Jabatan</label>
               <select class="form-control" type="text" name="angkatan">
-                <option @if($mhs->angkatan == '2022') selected @endif value="2022">2022</option>
-                <option @if($mhs->angkatan == '2021') selected @endif value="2021">2021</option>
-                <option @if($mhs->angkatan == '2019') selected @endif value="2020">2020</option>
-                <option @if($mhs->angkatan == '2018') selected @endif value="2019">2019</option>
-                <option @if($mhs->angkatan == '2017') selected @endif value="2018">2018</option>
+                <option @if($mhs->angkatan == 'Ketua') selected @endif value="Ketua">Ketua</option>
+                <option @if($mhs->angkatan == 'Anggota') selected @endif value="Anggota">Anggota</option>
               </select>
               @error('angkatan')
               <small class="text-danger">{{$message}}</small>
