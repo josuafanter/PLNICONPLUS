@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Project | Log in (v2)</title>
+  <title>PLN Icon+ | Log in (v2)</title>
 
  @include('Template.head')
 </head>
@@ -13,7 +13,7 @@
   <!-- /.login-logo -->
   <div class="card card-outline card-primary">
     <div class="card-header text-center">
-      <a class="h1">The <b>Project</b></a>
+      <a class="h1">PLN <b>Icon+</b></a>
     </div>
     <div class="card-body">
       <p class="login-box-msg">Masuk Terlebih Dahulu</p>
