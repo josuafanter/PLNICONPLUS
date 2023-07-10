@@ -25,7 +25,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Ubah Komponen</h1>
+            <h1 class="m-0">Ubah</h1>
           </div><!-- /.col -->
 <!-- /.col -->
         </div><!-- /.row -->
@@ -41,22 +41,22 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <form action="/komponen/{{$komponen->id}}" method="post" enctype="multipart/form-data">
               @csrf
               @method('put')
-              <label for="">Nama komponen</label>
+              <label for="">Nama Pelanggan</label>
               <input class="form-control" type="text" name="nama_komponen" value="{{$komponen->nama_komponen}}">
               @error('nama_komponen')
                 <small class="text-danger">{{$message}}</small>
               @enderror
-              <label for="">Link komponen</label>
+              <label for="">Nomor Invoice</label>
               <input class="form-control" type="text" name="link_komponen" value="{{$komponen->link_komponen}}">
               @error('link_komponen')
               <small class="text-danger">{{$message}}</small>
               @enderror
-              <label for="">Deskripsi Komponen</label>
+              <label for="">Nomor AGR</label>
               <textarea class="form-control" type="text" name="deskripsi_komponen">{{$komponen->deskripsi_komponen}}</textarea>
               @error('deskripsi_komponen')
               <small class="text-danger">{{$message}}</small>
               @enderror
-              <label for="">Gambar</label><br>
+              <label for="">Tanggal Pengiriman</label><br>
               <img src="{{URL::to($komponen->gambar_komponen)}}" alt="" style="width: 200px;">
              <input type="file" class="form-control" name="gambar_komponen" value="{{$komponen->gambar_komponen}}">
              @error('gambar_komponen')

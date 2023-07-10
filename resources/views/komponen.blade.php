@@ -50,10 +50,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <table class="table">
                 <tr>
                     <th>No</th>
-                    <th>Nama Komponen</th>
-                    <th>Gambar Komponen</th>
-                    <th>Deskripsi</th>
-                    <th>Link Komponen</th>
+                    <th>Nama Pelanggan</th>
+                    <th>Nomor Invoice</th>
+                    <th>Nomor AGR</th>
+                    <th>Tanggal Pengiriman</th>
                     <th>Aksi</th>
                 </tr>
 

@@ -25,7 +25,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Edit Aplikasi</h1>
+            <h1 class="m-0">Edit Data</h1>
           </div><!-- /.col --><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
