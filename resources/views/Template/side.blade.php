@@ -24,12 +24,12 @@
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
+              with font-awesome or any other icon font library -->
           <li class="nav-item menu-open">
     
           <li class="nav-item active menu-open">
             <a href="/home" class="nav-link">
-              <i class="nav-icon fas fa-solid fa-robot"></i>
+              <i class="nav-icon fas fa-solid fa-home"></i>
               <p>
                 Home
               </p>
@@ -37,42 +37,42 @@
 
           <li class="nav-item menu-open">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-solid fa-wrench"></i>
+              <i class="nav-icon fas fa-solid fa-plus"></i>
               <p>
-                Tambah Project
+                Tambah Data
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav-item active nav-treeview">
               <li class="nav-item">
                 <a href="/project" class="nav-link">
-                  <i class="fas fa-solid fa-toolbox nav-icon"></i>
-                  <p>Project</p>
+                  <i class="nav-icon fas fa-solid fa-table"></i>
+                  <p>Tabel</p>
                 </a>
               </li>
               @if(Auth::user()->role == 'admin')
               <li class="nav-item menu-open">
                 <a href="/komponen" class="nav-link">
-                  <i class="fas fa-solid fa-toolbox nav-icon"></i>
-                  <p>Komponen</p>
+                  <i class="nav-icon fas fa-solid fa-file"></i>
+                  <p>Data</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="/aplikasi" class="nav-link">
-                  <i class="fas fa-solid fa-toolbox nav-icon"></i>
-                  <p>Aplikasi</p>
+                  <i class="fas fa-solid fa-users nav-icon"></i>
+                  <p>Pic</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="/mahasiswa" class="nav-link">
-                  <i class="fas fa-solid fa-users nav-icon"></i>
-                  <p>Mahasiswa</p>
+                  <i class="fas fa-solid fa-user nav-icon"></i>
+                  <p>None</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="/dospem" class="nav-link">
                   <i class="fas fa-solid fa-user nav-icon"></i>
-                  <p>Dosen pembimbing</p>
+                  <p>none</p>
                 </a>
               </li>
 
